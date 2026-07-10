@@ -85,9 +85,9 @@
 - Hinweis: Live-Trigger-Test in frischer Session war headless nicht möglich (claude -p ohne CLI-Login in dieser Desktop-Session); Test lief als Simulation gegen die echten Descriptions. Empfehlung: einmal manuell in neuer Session "Neues Projekt: Café Köln..." eingeben.
 
 ## [11] RELEASE & LAUNCH
-- [ ] git push, gh Release v1.0.0 mit Changelog
-- [ ] launch/-Ordner (in .gitignore!): Show-HN, r/ClaudeAI, X-Thread (5 Tweets), Screencast-Drehbuch
-- [ ] ► FREIGABE 3: Launch-Posts zur Abnahme zeigen
+- [x] git push, gh Release v1.0.0 mit Changelog: https://github.com/gekkos-tech/agency-os/releases/tag/v1.0.0
+- [x] launch/-Ordner (gitignored ✓): show-hn.md, reddit-claudeai.md, x-thread.md (5 Tweets), screencast-script.md (60s)
+- [ ] ► FREIGABE 3: Launch-Posts zur Abnahme gezeigt — WARTE AUF USER-OK
 
 ---
 
