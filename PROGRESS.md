@@ -52,10 +52,12 @@
 - [x] Trigger-Abgrenzung: Description grenzt explizit gegen threejs-webgl, react-three-fiber, lottie-animations, rive-interactive, remotion-video ab
 - [x] Quelle: greensock/gsap-skills (offiziell, MIT), LICENSE gebündelt
 
-## [6] SEO-KONSOLIDIERUNG
-- [ ] 30 seo-* Skills analysieren
-- [ ] ► FREIGABE 2: Mapping 30 → max. 10 zeigen (Audit, Technical, Content, Schema, Local, AI-Visibility, Competitor, Tools), auf OK warten
-- [ ] Nach Freigabe: nach plugins/seo-marketing/ konsolidieren
+## [6] SEO-KONSOLIDIERUNG ✅
+- [x] 31 seo-* Skills analysiert (alle AgriciDaniel/claude-seo v2.2.0, MIT; Kern-Skill "seo" = 1MB Engine + 506MB lokale .venv, die natürlich nicht mitkopiert wurde)
+- [x] ► FREIGABE 2 erteilt: 31 → 9 (seo-audit, seo-technical, seo-content, seo-schema, seo-local, seo-ai-visibility, seo-competitor, seo-backlinks, seo-ecommerce)
+- [x] Konsolidiert nach plugins/seo-marketing/: gemergte Bodies als references/, Descriptions neu für Trigger-Abgrenzung ("SEO-Audit" → genau seo-audit), 15 Spezialisten-Agenten nach agents/
+- [x] NICHT gebündelt (API-Key nötig): seo-ahrefs, seo-dataforseo, seo-seranking, seo-profound, seo-bing, seo-firecrawl, seo-google, seo-image-gen → README-Link auf claude-seo
+- [x] FLOW-Framework (CC BY 4.0) mit Attribution in THIRD_PARTY_LICENSES.md
 
 ## [7] AD-CREATIVE-SKILLS (eigene, mit skill-creator)
 - [ ] ad-concepts: Kampagnen-Ideation (AIDA, PAS, JTBD, Hooks) → 3 Kampagnenrouten

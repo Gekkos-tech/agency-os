@@ -69,7 +69,20 @@ the skill files. This document lists all attributions.
   consolidated into one skill; original bodies preserved as references/*.md with
   cross-references rewritten; new router SKILL.md by GEKKOS Tech.
 
----
+## seo-audit, seo-technical, seo-content, seo-schema, seo-local, seo-ai-visibility, seo-competitor, seo-backlinks, seo-ecommerce (plugin: seo-marketing)
+- Source: https://github.com/AgriciDaniel/claude-seo (v2.2.0)
+- Author: Daniel Agrici; individual sub-skills credit original authors from the
+  "Pro Hub Challenge": Lutfiya Miller (clustering), Florian Schmitz (SXO),
+  Dan Colta (drift), Matej Marjanovic (e-commerce)
+- License: MIT (original LICENSE.txt files retained inside the skills)
+- Modifications: 31 skills consolidated into 9 by GEKKOS Tech — merged skill
+  bodies preserved as references/*.md, descriptions rewritten for trigger
+  separation, API-key-dependent tool skills (ahrefs, dataforseo, seranking,
+  profound, bing, firecrawl, google, image-gen) not bundled. 15 specialist
+  subagent definitions bundled under agents/.
 
-*Entries for the SEO family (AgriciDaniel/claude-seo, MIT) are added in
-consolidation step 6.*
+## FLOW framework prompt library (inside seo-ai-visibility)
+- Source: FLOW knowledge base bundled with claude-seo (41 prompts)
+- License: CC BY 4.0 (attribution retained in references/flow-framework.md
+  and references/flow-framework/bibliography.md)
+- Modifications: none
