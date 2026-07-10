@@ -24,7 +24,9 @@ the skill files. This document lists all attributions.
 - Source: https://github.com/pbakaus/impeccable
 - Author: Paul Bakaus (https://impeccable.style)
 - License: Apache-2.0 (LICENSE file bundled with the skill)
-- Modifications: none
+- Modifications: one sentence appended to the frontmatter description to
+  delegate GSAP/scroll animation implementation to gsap-suite (trigger
+  separation within agency-os); skill body unchanged
 
 ## awesome-design-md (plugin: design-foundation)
 - Source: https://github.com/VoltAgent/awesome-design-md

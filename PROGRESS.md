@@ -76,10 +76,13 @@
 ## [9] README (Englisch) ✅
 - [x] Hero-Pitch, Badges, Quick Start (/plugin marketplace add gekkos-tech/agency-os), Bundle-Tabelle, Command-Übersicht, Workflow-Diagramm, Credits (alle Attributionen), Recommended companion plugins (frontend-design, anthropics/skills, Vercel, claude-seo Power-ups), Contributing-Regeln, License
 
-## [10] END-TO-END-TEST
-- [ ] /plugin marketplace add ./ + alle Plugins installieren
-- [ ] Trigger-Tests: Café Köln (agency-workflow), Scroll-Animation (gsap-suite), SEO-Audit (1 Skill), Fitnessstudio-Kampagne (ad-concepts)
-- [ ] Fehler beheben, Frontmatter validieren
+## [10] END-TO-END-TEST ✅
+- [x] claude plugin marketplace add ./ + alle 6 Plugins installiert (user-scope), `claude plugin validate --strict` grün für Marketplace + alle 6 Plugins
+- [x] `claude plugin details`: alle Skills/Commands/Agenten korrekt erkannt (agency-core 6 Skills, ad-creative 10, seo-marketing 9 Skills + 15 Agenten)
+- [x] Trigger-Tests 4/4 PASS (Judge-Agent gegen den echten Skill-Katalog): Café Köln → agency-workflow; Scroll-Hero → gsap-suite; SEO-Audit → genau seo-audit (Deferral-Klauseln der 8 anderen SEO-Skills greifen); Fitnessstudio-Kampagne → ad-concepts
+- [x] Fix aus Test: impeccable-Description grenzt jetzt explizit gegen gsap-suite ab (als Modification in THIRD_PARTY_LICENSES.md notiert)
+- [x] Frontmatter aller 34 Skills + 15 Agenten YAML-validiert (name==dir, description <1024)
+- Hinweis: Live-Trigger-Test in frischer Session war headless nicht möglich (claude -p ohne CLI-Login in dieser Desktop-Session); Test lief als Simulation gegen die echten Descriptions. Empfehlung: einmal manuell in neuer Session "Neues Projekt: Café Köln..." eingeben.
 
 ## [11] RELEASE & LAUNCH
 - [ ] git push, gh Release v1.0.0 mit Changelog
