@@ -59,11 +59,11 @@
 - [x] NICHT gebündelt (API-Key nötig): seo-ahrefs, seo-dataforseo, seo-seranking, seo-profound, seo-bing, seo-firecrawl, seo-google, seo-image-gen → README-Link auf claude-seo
 - [x] FLOW-Framework (CC BY 4.0) mit Attribution in THIRD_PARTY_LICENSES.md
 
-## [7] AD-CREATIVE-SKILLS (eigene, mit skill-creator)
-- [ ] ad-concepts: Kampagnen-Ideation (AIDA, PAS, JTBD, Hooks) → 3 Kampagnenrouten
-- [ ] social-formats: Format-Specs Meta/IG/TikTok/LinkedIn/YouTube (Web-Recherche Juli 2026) + Adaptions-Workflow
-- [ ] ad-copy: Performance-Copywriting, Headlines/CTAs/A-B, Tonalitäts-Matrix, DE+EN
-- [ ] landingpage-cro: Conversion-Struktur (Design + SEO + Copy)
+## [7] AD-CREATIVE-SKILLS (eigene, mit skill-creator) ✅
+- [x] ad-concepts: 3 Kampagnenrouten (Titel, Claim, Hook, Visual, Kanal, Framework), AIDA/PAS/JTBD/4U + Hook-Formelbank, Register-Diversitätsregel
+- [x] social-formats: Specs online verifiziert (Juli 2026) für Meta/IG, TikTok, LinkedIn, YouTube; Safe-Zones, Adaptions-Workflow, Naming-Konvention. Nicht verifizierbar (im Skill markiert): LinkedIn-Stories-Relaunch, TikTok-Safe-Zone-Varianz, YouTube Pause Ads
+- [x] ad-copy: 4 Headline-Systeme DE+EN, CTA-Bibliothek nach Funnel-Stufe, A/B/C-Protokoll mit Hypothesen, Tonalitäts-Matrix (4 Stimmen × 3 Funnel-Stufen), Du/Sie-Entscheidungsbaum, UWG/HWG-Compliance
+- [x] landingpage-cro: 8-Sektionen-Conversion-Narrativ, Message-Match-Regel, Friction-Audit, DACH-Trust-Elemente, Mobile-First-Regeln, Messplan
 - [x] pre-launch-checklist in quality-qa: DSGVO, Impressum (§5 DDG), TDDDG-Consent, BFSG, SSL, Redirects, 404, OG-Tags, Sitemap, Google-Fonts-Selbsthosting
 
 ## [8] COMMANDS & AGENTS ✅
