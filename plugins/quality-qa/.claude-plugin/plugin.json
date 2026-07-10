@@ -1,0 +1,10 @@
+{
+  "name": "quality-qa",
+  "description": "Quality assurance: performance, Core Web Vitals, accessibility, web best practices, webapp testing and pre-launch checklists.",
+  "version": "0.1.0",
+  "author": { "name": "GEKKOS Tech", "url": "https://github.com/gekkos-tech" },
+  "homepage": "https://github.com/gekkos-tech/agency-os",
+  "repository": "https://github.com/gekkos-tech/agency-os",
+  "license": "MIT",
+  "keywords": ["qa", "performance", "accessibility", "core-web-vitals", "testing"]
+}

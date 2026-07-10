@@ -1,0 +1,85 @@
+# agency-os — Build Progress
+
+> Claude Code Plugin-Marketplace für Web- & Werbedesign-Agenturen.
+> GitHub: gekkos-tech/agency-os (GEKKOS Tech)
+> Bei Session-Ende: "Lies PROGRESS.md und arbeite weiter."
+
+**Regeln:**
+- Nur bei den 3 FREIGABE-Punkten stoppen + bei unklaren Lizenzen
+- Nach jedem abgeschlossenen Schritt committen
+- Plugin-Skills (Kategorie d) NIEMALS kopieren
+
+---
+
+## [1] REPO-SETUP ✅
+- [x] git init
+- [x] gh: public Repo gekkos-tech/agency-os erstellt + verbunden (https://github.com/gekkos-tech/agency-os)
+- [x] Struktur: .claude-plugin/marketplace.json, plugins/{agency-core, design-foundation, motion-3d, quality-qa, seo-marketing, ad-creative}/
+- [x] THIRD_PARTY_LICENSES.md, README.md (Platzhalter), LICENSE (MIT, © 2026 GEKKOS Tech)
+- [x] marketplace.json: 6 Plugins registriert, owner "GEKKOS Tech", offizielles Schema
+- [x] Jedes Plugin: plugin.json mit version 0.1.0
+- [x] gh: Topics (claude-code, claude-skills, web-agency, web-design, ai-skills) + Description (bei Repo-Erstellung gesetzt)
+- [x] .gitignore mit launch/ (für Schritt 11 vorbereitet)
+
+## [2] SKILL-MIGRATION (installierte Skills)
+- [ ] Inventar ~/.claude/skills: Name, Herkunft, Lizenz
+- [ ] Kategorisieren: (a) eigene, (b) fremd MIT/Apache, (c) fremd ohne Lizenz, (d) Plugin-Skills (nie kopieren)
+- [ ] ► FREIGABE 1: Mapping-Tabelle alt → neu zeigen, auf OK warten
+- [ ] Nach Freigabe: kopieren, THIRD_PARTY_LICENSES.md, Trigger-Descriptions abgrenzen
+  - Mapping-Vorgabe:
+    - design-foundation: ui-ux-pro-max, taste (taste-skill + taste-skill-v1 + gpt-tasteskill → EIN Skill), impeccable, redesign-skill, make-interfaces-feel-better, awesome-design-md; minimalist/brutalist/soft/stitch → style-systems (references/ pro Stil)
+    - motion-3d: remotion-best-practices
+    - agency-core: output-skill, karpathy-guidelines
+    - ad-creative: brandkit, imagegen-frontend-web, imagegen-frontend-mobile, image-to-code-skill
+    - Kategorie (c): nur Link in README "Recommended skills"
+
+## [3] EXTERNE MIT/APACHE-SKILLS
+- [ ] design-foundation: frontend-design (anthropics/claude-code, Apache 2.0); ggf. frische ui-ux-pro-max (nextlevelbuilder, MIT) + taste-skill (Leonxlnx, MIT)
+- [ ] quality-qa: performance, core-web-vitals, accessibility, best-practices (addyosmani/web-quality-skills, MIT — deren seo NICHT) + webapp-testing (anthropics/skills, Apache 2.0)
+- [ ] motion-3d: threejs-webgl, react-three-fiber, lottie-animations, rive-interactive (freshtechbro/claudedesignskills, MIT)
+- [ ] Original-LICENSE behalten, THIRD_PARTY_LICENSES.md ergänzen; Repo ohne LICENSE → überspringen + hier notieren
+
+## [4] AGENCY-WORKFLOW-SKILL (Router, mit skill-creator)
+- [ ] build-Skill (GEKKOS) analysieren, generalisieren (keine Interna/Kundennamen!)
+- [ ] plugins/agency-core/skills/agency-workflow/: Router für BRIEF → KONZEPT → DESIGN → BUILD → QA → LAUNCH
+- [ ] SKILL.md < 500 Zeilen, Details in references/, Trigger: "neues Projekt", "Website für Kunde", "Kundenprojekt starten"
+
+## [5] GSAP-KONSOLIDIERUNG
+- [ ] 8 gsap-* Skills → EIN gsap-suite in motion-3d, references/ pro Thema
+- [ ] Trigger-Abgrenzung zu 3D-Skills prüfen
+
+## [6] SEO-KONSOLIDIERUNG
+- [ ] 30 seo-* Skills analysieren
+- [ ] ► FREIGABE 2: Mapping 30 → max. 10 zeigen (Audit, Technical, Content, Schema, Local, AI-Visibility, Competitor, Tools), auf OK warten
+- [ ] Nach Freigabe: nach plugins/seo-marketing/ konsolidieren
+
+## [7] AD-CREATIVE-SKILLS (eigene, mit skill-creator)
+- [ ] ad-concepts: Kampagnen-Ideation (AIDA, PAS, JTBD, Hooks) → 3 Kampagnenrouten
+- [ ] social-formats: Format-Specs Meta/IG/TikTok/LinkedIn/YouTube (Web-Recherche Juli 2026) + Adaptions-Workflow
+- [ ] ad-copy: Performance-Copywriting, Headlines/CTAs/A-B, Tonalitäts-Matrix, DE+EN
+- [ ] landingpage-cro: Conversion-Struktur (Design + SEO + Copy)
+- [ ] pre-launch-checklist in quality-qa: DSGVO, Impressum, Cookie-Consent, BFSG, SSL, Redirects, 404, OG-Tags, Sitemap
+
+## [8] COMMANDS & AGENTS
+- [ ] agency-core: /new-project, /handoff, /proposal
+- [ ] design-foundation: /design-review + Agent design-reviewer
+- [ ] quality-qa: /pre-launch + Agent qa-auditor
+- [ ] ad-creative: /campaign, /adapt-formats
+
+## [9] README (Englisch)
+- [ ] Hero-Pitch, Badges, Quick Start, Bundle-Tabelle, Command-Übersicht, Credits, Recommended companion plugins, Contributing, License
+
+## [10] END-TO-END-TEST
+- [ ] /plugin marketplace add ./ + alle Plugins installieren
+- [ ] Trigger-Tests: Café Köln (agency-workflow), Scroll-Animation (gsap-suite), SEO-Audit (1 Skill), Fitnessstudio-Kampagne (ad-concepts)
+- [ ] Fehler beheben, Frontmatter validieren
+
+## [11] RELEASE & LAUNCH
+- [ ] git push, gh Release v1.0.0 mit Changelog
+- [ ] launch/-Ordner (in .gitignore!): Show-HN, r/ClaudeAI, X-Thread (5 Tweets), Screencast-Drehbuch
+- [ ] ► FREIGABE 3: Launch-Posts zur Abnahme zeigen
+
+---
+
+## Notizen / Entscheidungen
+- (leer)

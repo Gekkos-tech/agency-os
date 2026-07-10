@@ -1,0 +1,10 @@
+{
+  "name": "motion-3d",
+  "description": "Motion & 3D: GSAP animation suite, Three.js/WebGL, React Three Fiber, Lottie, Rive and Remotion video.",
+  "version": "0.1.0",
+  "author": { "name": "GEKKOS Tech", "url": "https://github.com/gekkos-tech" },
+  "homepage": "https://github.com/gekkos-tech/agency-os",
+  "repository": "https://github.com/gekkos-tech/agency-os",
+  "license": "MIT",
+  "keywords": ["animation", "gsap", "threejs", "webgl", "motion"]
+}

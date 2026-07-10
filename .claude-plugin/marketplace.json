@@ -1,0 +1,61 @@
+{
+  "name": "agency-os",
+  "owner": {
+    "name": "GEKKOS Tech",
+    "url": "https://github.com/gekkos-tech"
+  },
+  "metadata": {
+    "description": "The complete Claude Code toolkit for web & advertising design agencies",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "agency-core",
+      "source": "./plugins/agency-core",
+      "description": "Agency project workflow: BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH router, project scaffolding, handoffs and proposals.",
+      "version": "0.1.0",
+      "author": { "name": "GEKKOS Tech" },
+      "keywords": ["agency", "workflow", "project-management", "web-design"]
+    },
+    {
+      "name": "design-foundation",
+      "source": "./plugins/design-foundation",
+      "description": "Design quality layer: UI/UX excellence, taste, style systems, interface polish and design review for premium web design.",
+      "version": "0.1.0",
+      "author": { "name": "GEKKOS Tech" },
+      "keywords": ["design", "ui", "ux", "frontend", "design-systems"]
+    },
+    {
+      "name": "motion-3d",
+      "source": "./plugins/motion-3d",
+      "description": "Motion & 3D: GSAP animation suite, Three.js/WebGL, React Three Fiber, Lottie, Rive and Remotion video.",
+      "version": "0.1.0",
+      "author": { "name": "GEKKOS Tech" },
+      "keywords": ["animation", "gsap", "threejs", "webgl", "motion"]
+    },
+    {
+      "name": "quality-qa",
+      "source": "./plugins/quality-qa",
+      "description": "Quality assurance: performance, Core Web Vitals, accessibility, web best practices, webapp testing and pre-launch checklists.",
+      "version": "0.1.0",
+      "author": { "name": "GEKKOS Tech" },
+      "keywords": ["qa", "performance", "accessibility", "core-web-vitals", "testing"]
+    },
+    {
+      "name": "seo-marketing",
+      "source": "./plugins/seo-marketing",
+      "description": "SEO & search marketing: audits, technical SEO, content, schema, local SEO, AI visibility (GEO) and competitor analysis.",
+      "version": "0.1.0",
+      "author": { "name": "GEKKOS Tech" },
+      "keywords": ["seo", "marketing", "schema", "local-seo", "geo"]
+    },
+    {
+      "name": "ad-creative",
+      "source": "./plugins/ad-creative",
+      "description": "Advertising creative: campaign ideation, ad copywriting, social format specs, landing page CRO, brand kits and image generation direction.",
+      "version": "0.1.0",
+      "author": { "name": "GEKKOS Tech" },
+      "keywords": ["advertising", "campaigns", "copywriting", "social-media", "cro"]
+    }
+  ]
+}

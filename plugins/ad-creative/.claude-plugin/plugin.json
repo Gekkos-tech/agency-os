@@ -1,0 +1,10 @@
+{
+  "name": "ad-creative",
+  "description": "Advertising creative: campaign ideation, ad copywriting, social format specs, landing page CRO, brand kits and image generation direction.",
+  "version": "0.1.0",
+  "author": { "name": "GEKKOS Tech", "url": "https://github.com/gekkos-tech" },
+  "homepage": "https://github.com/gekkos-tech/agency-os",
+  "repository": "https://github.com/gekkos-tech/agency-os",
+  "license": "MIT",
+  "keywords": ["advertising", "campaigns", "copywriting", "social-media", "cro"]
+}
