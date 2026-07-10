@@ -39,9 +39,26 @@ the skill files. This document lists all attributions.
 - License: MIT
 - Modifications: none
 
+## performance, core-web-vitals, accessibility, best-practices (plugin: quality-qa)
+- Source: https://github.com/addyosmani/web-quality-skills
+- Author: Addy Osmani
+- License: MIT (LICENSE file bundled with each skill)
+- Modifications: none (the repository's `seo` and `web-quality-audit` skills are
+  intentionally not bundled)
+
+## webapp-testing (plugin: quality-qa)
+- Source: https://github.com/anthropics/skills (skills/webapp-testing)
+- Author: Anthropic, PBC
+- License: Apache-2.0 (original LICENSE.txt bundled with the skill)
+- Modifications: none
+
+## threejs-webgl, react-three-fiber, lottie-animations, rive-interactive (plugin: motion-3d)
+- Source: https://github.com/freshtechbro/claudedesignskills
+- Author: freshtechbro
+- License: MIT (LICENSE file bundled with each skill)
+- Modifications: none
+
 ---
 
-*Entries for the GSAP suite (greensock/gsap-skills, MIT), the SEO family
-(AgriciDaniel/claude-seo, MIT), web-quality skills (addyosmani/web-quality-skills, MIT),
-webapp-testing (anthropics/skills, Apache-2.0) and 3D/motion skills
-(freshtechbro/claudedesignskills, MIT) are added in later integration steps.*
+*Entries for the GSAP suite (greensock/gsap-skills, MIT) and the SEO family
+(AgriciDaniel/claude-seo, MIT) are added in consolidation steps 5–6.*

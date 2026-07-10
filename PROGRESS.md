@@ -33,11 +33,13 @@
     - ad-creative: brandkit, imagegen-frontend-web, imagegen-frontend-mobile, image-to-code-skill
     - Kategorie (c): nur Link in README "Recommended skills"
 
-## [3] EXTERNE MIT/APACHE-SKILLS
-- [ ] design-foundation: frontend-design (anthropics/claude-code, Apache 2.0); ggf. frische ui-ux-pro-max (nextlevelbuilder, MIT) + taste-skill (Leonxlnx, MIT)
-- [ ] quality-qa: performance, core-web-vitals, accessibility, best-practices (addyosmani/web-quality-skills, MIT — deren seo NICHT) + webapp-testing (anthropics/skills, Apache 2.0)
-- [ ] motion-3d: threejs-webgl, react-three-fiber, lottie-animations, rive-interactive (freshtechbro/claudedesignskills, MIT)
-- [ ] Original-LICENSE behalten, THIRD_PARTY_LICENSES.md ergänzen; Repo ohne LICENSE → überspringen + hier notieren
+## [3] EXTERNE MIT/APACHE-SKILLS ✅
+- [x] frontend-design NICHT gebündelt: anthropics/claude-code ist proprietär (© Anthropic, All rights reserved) → nur README-Link "Recommended companion plugins"
+- [x] ui-ux-pro-max durch frische Upstream-Version v2.6.2 ersetzt (84 Styles, motion.csv etc.); taste-skill v2 war bereits identisch mit Upstream
+- [x] quality-qa: performance, core-web-vitals, accessibility, best-practices (addyosmani, MIT — seo + web-quality-audit NICHT) + webapp-testing (anthropics/skills, Apache 2.0)
+- [x] motion-3d: threejs-webgl, react-three-fiber, lottie-animations, rive-interactive (freshtechbro, MIT)
+- [x] Original-LICENSE je Skill gebündelt, THIRD_PARTY_LICENSES.md ergänzt
+- Übersprungen (keine LICENSE im Quell-Repo): remotion-dev/skills (→ eigener remotion-video-Skill), jakubkrehel/make-interfaces-feel-better (→ eigener interface-polish-Skill)
 
 ## [4] AGENCY-WORKFLOW-SKILL (Router, mit skill-creator)
 - [ ] build-Skill (GEKKOS) analysieren, generalisieren (keine Interna/Kundennamen!)
@@ -104,6 +106,13 @@
 - `gpt-tasteskill`, `output-skill`, `brandkit`, `imagegen-frontend-web`, `imagegen-frontend-mobile`, `image-to-code-skill` — keine Lizenz-/Autor-Marker; falls eigene Skills des Users → kopierbar
 
 **(d) Plugin-Skills:** keine in ~/.claude/skills (vercel/design/searchfit/anthropic-skills liegen im Plugin-Cache, werden nie kopiert)
+
+### FREIGABE 1 — Ergebnis (2026-07-10):
+- Mapping freigegeben ("mach alles als Bundle wenn es geht") — frontend-design bleibt Link (proprietär, geht nicht)
+- Style-Skills + redesign + make-interfaces-feel-better: NEU SCHREIBEN → style-systems, redesign, interface-polish
+- brandkit/imagegen-web/imagegen-mobile/image-to-code/gpt-tasteskill/output-skill: NEU SCHREIBEN → brandkit, imagegen-web, imagegen-mobile, image-to-code, complete-output
+- remotion: EIGENEN Skill schreiben → remotion-video
+- NACHTRÄGLICHER FUND: Leonxlnx/taste-skill (MIT) enthält ALLE diese "unklaren" Skills (brandkit, imagegen-*, image-to-code, redesign, output, minimalist/brutalist/soft/stitch, gpt-tasteskill) — Originale wären also doch bündelbar. Da User explizit "neu schreiben" gewählt hat, bleiben die Neufassungen; Originale können später bei Bedarf ersetzt werden.
 
 ### Lizenz-Befunde Schritt 3 (extern):
 - ⚠️ `anthropics/claude-code` ist PROPRIETÄR (© Anthropic PBC, All rights reserved) — frontend-design darf NICHT gebündelt werden → nur als "Recommended companion plugin" verlinken
