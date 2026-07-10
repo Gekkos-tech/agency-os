@@ -84,10 +84,10 @@
 - [x] Frontmatter aller 34 Skills + 15 Agenten YAML-validiert (name==dir, description <1024)
 - Hinweis: Live-Trigger-Test in frischer Session war headless nicht möglich (claude -p ohne CLI-Login in dieser Desktop-Session); Test lief als Simulation gegen die echten Descriptions. Empfehlung: einmal manuell in neuer Session "Neues Projekt: Café Köln..." eingeben.
 
-## [11] RELEASE & LAUNCH
+## [11] RELEASE & LAUNCH ✅
 - [x] git push, gh Release v1.0.0 mit Changelog: https://github.com/gekkos-tech/agency-os/releases/tag/v1.0.0
 - [x] launch/-Ordner (gitignored ✓): show-hn.md, reddit-claudeai.md, x-thread.md (5 Tweets), screencast-script.md (60s)
-- [ ] ► FREIGABE 3: Launch-Posts zur Abnahme gezeigt — WARTE AUF USER-OK
+- [x] ► FREIGABE 3 erteilt (2026-07-11): Launch-Posts freigegeben — Veröffentlichung macht der User selbst (launch/ bleibt gitignored)
 
 ---
 
