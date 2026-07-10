@@ -46,9 +46,10 @@
 - [ ] plugins/agency-core/skills/agency-workflow/: Router für BRIEF → KONZEPT → DESIGN → BUILD → QA → LAUNCH
 - [ ] SKILL.md < 500 Zeilen, Details in references/, Trigger: "neues Projekt", "Website für Kunde", "Kundenprojekt starten"
 
-## [5] GSAP-KONSOLIDIERUNG
-- [ ] 8 gsap-* Skills → EIN gsap-suite in motion-3d, references/ pro Thema
-- [ ] Trigger-Abgrenzung zu 3D-Skills prüfen
+## [5] GSAP-KONSOLIDIERUNG ✅
+- [x] 8 gsap-* Skills → gsap-suite in motion-3d (Router-SKILL.md + references/{core,timeline,scrolltrigger,plugins,react,frameworks,utils,performance}.md)
+- [x] Trigger-Abgrenzung: Description grenzt explizit gegen threejs-webgl, react-three-fiber, lottie-animations, rive-interactive, remotion-video ab
+- [x] Quelle: greensock/gsap-skills (offiziell, MIT), LICENSE gebündelt
 
 ## [6] SEO-KONSOLIDIERUNG
 - [ ] 30 seo-* Skills analysieren
