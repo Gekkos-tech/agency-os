@@ -60,5 +60,16 @@ the skill files. This document lists all attributions.
 
 ---
 
-*Entries for the GSAP suite (greensock/gsap-skills, MIT) and the SEO family
-(AgriciDaniel/claude-seo, MIT) are added in consolidation steps 5–6.*
+## gsap-suite (plugin: motion-3d)
+- Source: https://github.com/greensock/gsap-skills (official GSAP skills)
+- Author: GreenSock / Webflow
+- License: MIT
+- Modifications: the 8 official skills (gsap-core, gsap-timeline, gsap-scrolltrigger,
+  gsap-plugins, gsap-react, gsap-frameworks, gsap-utils, gsap-performance) were
+  consolidated into one skill; original bodies preserved as references/*.md with
+  cross-references rewritten; new router SKILL.md by GEKKOS Tech.
+
+---
+
+*Entries for the SEO family (AgriciDaniel/claude-seo, MIT) are added in
+consolidation step 6.*
