@@ -64,16 +64,17 @@
 - [ ] social-formats: Format-Specs Meta/IG/TikTok/LinkedIn/YouTube (Web-Recherche Juli 2026) + Adaptions-Workflow
 - [ ] ad-copy: Performance-Copywriting, Headlines/CTAs/A-B, Tonalitäts-Matrix, DE+EN
 - [ ] landingpage-cro: Conversion-Struktur (Design + SEO + Copy)
-- [ ] pre-launch-checklist in quality-qa: DSGVO, Impressum, Cookie-Consent, BFSG, SSL, Redirects, 404, OG-Tags, Sitemap
+- [x] pre-launch-checklist in quality-qa: DSGVO, Impressum (§5 DDG), TDDDG-Consent, BFSG, SSL, Redirects, 404, OG-Tags, Sitemap, Google-Fonts-Selbsthosting
 
-## [8] COMMANDS & AGENTS
-- [ ] agency-core: /new-project, /handoff, /proposal
-- [ ] design-foundation: /design-review + Agent design-reviewer
-- [ ] quality-qa: /pre-launch + Agent qa-auditor
-- [ ] ad-creative: /campaign, /adapt-formats
+## [8] COMMANDS & AGENTS ✅
+- [x] agency-core: /new-project, /handoff, /proposal
+- [x] design-foundation: /design-review + Agent design-reviewer
+- [x] quality-qa: /pre-launch + Agent qa-auditor
+- [x] ad-creative: /campaign, /adapt-formats
+- [x] (Bonus aus Schritt 6: 15 SEO-Spezialisten-Agenten in seo-marketing/agents/)
 
-## [9] README (Englisch)
-- [ ] Hero-Pitch, Badges, Quick Start, Bundle-Tabelle, Command-Übersicht, Credits, Recommended companion plugins, Contributing, License
+## [9] README (Englisch) ✅
+- [x] Hero-Pitch, Badges, Quick Start (/plugin marketplace add gekkos-tech/agency-os), Bundle-Tabelle, Command-Übersicht, Workflow-Diagramm, Credits (alle Attributionen), Recommended companion plugins (frontend-design, anthropics/skills, Vercel, claude-seo Power-ups), Contributing-Regeln, License
 
 ## [10] END-TO-END-TEST
 - [ ] /plugin marketplace add ./ + alle Plugins installieren
