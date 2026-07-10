@@ -22,9 +22,9 @@
 - [x] .gitignore mit launch/ (für Schritt 11 vorbereitet)
 
 ## [2] SKILL-MIGRATION (installierte Skills)
-- [ ] Inventar ~/.claude/skills: Name, Herkunft, Lizenz
-- [ ] Kategorisieren: (a) eigene, (b) fremd MIT/Apache, (c) fremd ohne Lizenz, (d) Plugin-Skills (nie kopieren)
-- [ ] ► FREIGABE 1: Mapping-Tabelle alt → neu zeigen, auf OK warten
+- [x] Inventar ~/.claude/skills: 58 Skills, Herkunft + Lizenz geprüft (siehe Notizen unten)
+- [x] Kategorisieren: (a) eigene, (b) fremd MIT/Apache, (c) fremd ohne Lizenz, (d) Plugin-Skills (keine in ~/.claude/skills)
+- [ ] ► FREIGABE 1: Mapping-Tabelle alt → neu gezeigt — WARTE AUF USER-OK
 - [ ] Nach Freigabe: kopieren, THIRD_PARTY_LICENSES.md, Trigger-Descriptions abgrenzen
   - Mapping-Vorgabe:
     - design-foundation: ui-ux-pro-max, taste (taste-skill + taste-skill-v1 + gpt-tasteskill → EIN Skill), impeccable, redesign-skill, make-interfaces-feel-better, awesome-design-md; minimalist/brutalist/soft/stitch → style-systems (references/ pro Stil)
@@ -82,4 +82,32 @@
 ---
 
 ## Notizen / Entscheidungen
-- (leer)
+
+### Skill-Inventar (Stand 2026-07-10, 58 Skills in ~/.claude/skills)
+
+**(a) Eigene:**
+- `build` (GEKKOS-Workflow) — wird NICHT kopiert, sondern generalisiert als Basis für agency-workflow (Schritt 4)
+
+**(b) Fremd, MIT/Apache — kopierbar mit Attribution:**
+- `ui-ux-pro-max` — nextlevelbuilder/ui-ux-pro-max-skill, MIT
+- `taste-skill`, `taste-skill-v1` — Leonxlnx/taste-skill, MIT
+- `impeccable` — Apache 2.0 (Frontmatter)
+- `karpathy-guidelines` — MIT (Frontmatter)
+- `awesome-design-md` — VoltAgent/awesome-design-md, MIT
+- `gsap-*` (8 Skills) — greensock/gsap-skills (offiziell), MIT
+- `seo*` (31 Skills) — AgriciDaniel/claude-seo v2.2.0, MIT (einzelne mit original_author aus "Pro Hub Challenge", in Attribution nennen)
+
+**(c) Fremd/unklar OHNE Lizenznachweis — Rückfrage bei FREIGABE 1:**
+- `minimalist-skill`, `brutalist-skill`, `soft-skill`, `stitch-skill` (Herkunft unbekannt)
+- `redesign-skill`, `make-interfaces-feel-better` (Herkunft unbekannt)
+- `remotion-best-practices` — stammt aus remotion-dev/skills, Repo hat KEINE LICENSE-Datei → nicht kopierbar ohne Klärung
+- `gpt-tasteskill`, `output-skill`, `brandkit`, `imagegen-frontend-web`, `imagegen-frontend-mobile`, `image-to-code-skill` — keine Lizenz-/Autor-Marker; falls eigene Skills des Users → kopierbar
+
+**(d) Plugin-Skills:** keine in ~/.claude/skills (vercel/design/searchfit/anthropic-skills liegen im Plugin-Cache, werden nie kopiert)
+
+### Lizenz-Befunde Schritt 3 (extern):
+- ⚠️ `anthropics/claude-code` ist PROPRIETÄR (© Anthropic PBC, All rights reserved) — frontend-design darf NICHT gebündelt werden → nur als "Recommended companion plugin" verlinken
+- `anthropics/skills` webapp-testing: eigene LICENSE.txt Apache 2.0 → OK
+- `addyosmani/web-quality-skills`: MIT → OK
+- `freshtechbro/claudedesignskills`: MIT → OK (threejs-webgl, react-three-fiber, lottie-animations, rive-interactive unter plugins/individual/)
+- `remotion-dev/skills`: KEINE LICENSE → überspringen (Regel), Remotion selbst NOASSERTION-Lizenz
