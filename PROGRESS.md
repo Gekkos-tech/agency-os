@@ -21,11 +21,12 @@
 - [x] gh: Topics (claude-code, claude-skills, web-agency, web-design, ai-skills) + Description (bei Repo-Erstellung gesetzt)
 - [x] .gitignore mit launch/ (für Schritt 11 vorbereitet)
 
-## [2] SKILL-MIGRATION (installierte Skills)
+## [2] SKILL-MIGRATION (installierte Skills) ✅
 - [x] Inventar ~/.claude/skills: 58 Skills, Herkunft + Lizenz geprüft (siehe Notizen unten)
 - [x] Kategorisieren: (a) eigene, (b) fremd MIT/Apache, (c) fremd ohne Lizenz, (d) Plugin-Skills (keine in ~/.claude/skills)
-- [ ] ► FREIGABE 1: Mapping-Tabelle alt → neu gezeigt — WARTE AUF USER-OK
-- [ ] Nach Freigabe: kopieren, THIRD_PARTY_LICENSES.md, Trigger-Descriptions abgrenzen
+- [x] ► FREIGABE 1 erteilt (siehe Notizen) — Migration + Neufassungen umgesetzt
+- [x] Kopiert: ui-ux-pro-max, taste (v1+v2 konsolidiert), impeccable, awesome-design-md, karpathy-guidelines; Attributionen + LICENSE-Dateien gebündelt; Trigger-Descriptions abgegrenzt
+- [x] Neu geschrieben (Freigabe-1-Entscheidung): style-systems, redesign, interface-polish, complete-output, brandkit, imagegen-web, imagegen-mobile, image-to-code, remotion-video
   - Mapping-Vorgabe:
     - design-foundation: ui-ux-pro-max, taste (taste-skill + taste-skill-v1 + gpt-tasteskill → EIN Skill), impeccable, redesign-skill, make-interfaces-feel-better, awesome-design-md; minimalist/brutalist/soft/stitch → style-systems (references/ pro Stil)
     - motion-3d: remotion-best-practices
@@ -41,10 +42,10 @@
 - [x] Original-LICENSE je Skill gebündelt, THIRD_PARTY_LICENSES.md ergänzt
 - Übersprungen (keine LICENSE im Quell-Repo): remotion-dev/skills (→ eigener remotion-video-Skill), jakubkrehel/make-interfaces-feel-better (→ eigener interface-polish-Skill)
 
-## [4] AGENCY-WORKFLOW-SKILL (Router, mit skill-creator)
-- [ ] build-Skill (GEKKOS) analysieren, generalisieren (keine Interna/Kundennamen!)
-- [ ] plugins/agency-core/skills/agency-workflow/: Router für BRIEF → KONZEPT → DESIGN → BUILD → QA → LAUNCH
-- [ ] SKILL.md < 500 Zeilen, Details in references/, Trigger: "neues Projekt", "Website für Kunde", "Kundenprojekt starten"
+## [4] AGENCY-WORKFLOW-SKILL (Router, mit skill-creator) ✅
+- [x] build-Skill analysiert; Prinzipien generalisiert (Plan-vor-Code, Handoff = Wahrheit, Quality-Layer prüft statt neu zu generieren, Scope-Disziplin) — keine GEKKOS-Interna/Kundennamen übernommen
+- [x] agency-workflow: Router BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH, Phase-Detection + Routing-Tabelle + Exit-Gates
+- [x] SKILL.md 73 Zeilen + references/{brief,concept,design,build,qa,launch}.md; Trigger DE+EN ("neues Projekt", "Website für Kunde", "Kundenprojekt starten", "new project", ...)
 
 ## [5] GSAP-KONSOLIDIERUNG ✅
 - [x] 8 gsap-* Skills → gsap-suite in motion-3d (Router-SKILL.md + references/{core,timeline,scrolltrigger,plugins,react,frameworks,utils,performance}.md)
