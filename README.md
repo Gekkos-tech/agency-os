@@ -4,13 +4,14 @@
 
 # agency-os: The Agency Toolkit for Claude Code
 
-**agency-os is an open-source plugin marketplace for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) built for web & advertising design agencies.** It packages 39 skills, 7 commands, and 17 specialist agents into 6 installable bundles that cover the entire agency lifecycle — from the first client call to the legal go-live gate. One workflow router keeps every project on rails: **BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH.**
+**agency-os is an open-source plugin marketplace for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) built for web & advertising design agencies.** It packages 40 skills, 9 commands, and 17 specialist agents into 6 installable bundles that cover the entire agency lifecycle — from the first client call to the legal go-live gate and the monthly retainer loop. One workflow router keeps every project on rails: **BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH → MAINTAIN.**
 
+[![validate](https://github.com/gekkos-tech/agency-os/actions/workflows/validate.yml/badge.svg)](https://github.com/gekkos-tech/agency-os/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin%20marketplace-d97706)](https://docs.anthropic.com/en/docs/claude-code/plugins)
 [![Release](https://img.shields.io/github/v/release/gekkos-tech/agency-os)](https://github.com/gekkos-tech/agency-os/releases)
 [![Bundles](https://img.shields.io/badge/bundles-6-blue)](#the-six-bundles)
-[![Skills](https://img.shields.io/badge/skills-39-blue)](#the-six-bundles)
+[![Skills](https://img.shields.io/badge/skills-40-blue)](#the-six-bundles)
 [![Made by GEKKOS Tech](https://img.shields.io/badge/made%20by-GEKKOS%20Tech-black)](https://github.com/gekkos-tech)
 
 > Built by an agency, for agencies. Everything here runs in real client production —
@@ -113,6 +114,12 @@ the phase's exit gate passes. Here is what each phase actually does:
 | **4 · BUILD** | Plan before code. Implement the handoff 1:1 — the handoff wins every argument | Working code, per-increment file lists | `image-to-code`, `gsap-suite`, `interface-polish`, `karpathy-guidelines` |
 | **5 · QA** | Evidence-based verification: function, fidelity, performance, accessibility | `docs/qa-report.md` | `performance`, `core-web-vitals`, `accessibility`, `webapp-testing` |
 | **6 · LAUNCH** | Legal + technical go-live gate, SEO baseline, cutover plan, handover | `docs/launch-checklist.md` with GO/NO-GO | `pre-launch-checklist`, `seo-audit`, `social-formats` |
+| **7 · MAINTAIN** | The post-launch loop: drift checks after deploys, monthly CWV/function re-tests, client reports | `docs/reports/YYYY-MM.md` per cadence | `seo-audit` (drift), `core-web-vitals`, `webapp-testing` |
+
+Every project also carries a **`docs/project-state.md`** — phase, gate status,
+blockers with owners, who owes what, and the single next step. The router
+updates it at every phase end; `/status` reads it back. That's how a project
+survives session boundaries and teammate handoffs.
 
 Two principles run through everything:
 
@@ -137,7 +144,7 @@ never emails anyone, and a site about to launch with staging `noindex` still set
 ## The six bundles
 
 <p align="center">
-  <img src="assets/bundles.png" alt="agency-os bundle map: 6 bundles, 39 skills" width="100%">
+  <img src="assets/bundles.png" alt="agency-os bundle map: 6 bundles, 40 skills" width="100%">
 </p>
 
 ### agency-core — the spine
@@ -146,11 +153,12 @@ The workflow router plus code-discipline guards. Install this first.
 
 | Skill | What it does |
 |---|---|
-| `agency-workflow` | Routes BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH with per-phase references and exit gates |
+| `agency-workflow` | Routes BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH → MAINTAIN with per-phase references, exit gates, and the project-state file |
 | `complete-output` | Bans placeholder patterns ("// rest stays the same"), enforces complete deliverables, clean split protocol |
 | `karpathy-guidelines` | Behavioral guardrails against common LLM coding mistakes — surgical changes, surfaced assumptions |
+| `cms-integration` | Which CMS (if any): decision tree + integration patterns for Payload, Sanity, Storyblok, Strapi, Decap, headless WordPress — schema modeled from the design handoff, editor-proof constraints, handover checklist |
 
-Commands: [`/new-project`](#commands) · [`/handoff`](#commands) · [`/proposal`](#commands)
+Commands: [`/new-project`](#commands) · [`/handoff`](#commands) · [`/proposal`](#commands) · [`/status`](#commands) · [`/monthly-report`](#commands)
 
 ### design-foundation — the quality layer
 
@@ -237,6 +245,8 @@ Commands: `/campaign` · `/adapt-formats`
 | `/new-project <brief>` | agency-core | Kick off a client project — runs the BRIEF phase |
 | `/handoff [path\|verify]` | agency-core | Assemble the binding design handoff from your assets, or audit it for completeness |
 | `/proposal [terms]` | agency-core | Client proposal from the brief: scope, phases, deliverables, assumptions, out-of-scope list |
+| `/status [path]` | agency-core | Where does the project stand? Phase, gates, blockers with owners, the single next step |
+| `/monthly-report <url>` | agency-core | The MAINTAIN loop: drift check, CWV spot-check, function re-test, client report |
 | `/design-review [target]` | design-foundation | Structured review: verdict, fidelity deviations, findings by severity, quick wins |
 | `/pre-launch <url>` | quality-qa | The full legal + technical go-live gate with GO/NO-GO verdict |
 | `/campaign <client + goal>` | ad-creative | 3 campaign routes with different emotional registers |
@@ -379,8 +389,11 @@ Issues and PRs welcome. Ground rules:
 2. **Trigger discipline** — new skill descriptions must state when to use
    them AND which sibling skill covers the neighboring case.
 3. **Skill format** — SKILL.md < 500 lines, details in `references/`,
-   valid frontmatter (`name` = directory name), `claude plugin validate --strict`
-   must pass.
+   valid frontmatter (`name` = directory name).
+4. **CI must stay green** — every push runs `claude plugin validate --strict`
+   plus `scripts/validate_frontmatter.py` (frontmatter, manifests, reference
+   links). Behavioral eval cases live in `evals/` and run locally via
+   `claude plugin eval` (early access).
 
 ## License
 

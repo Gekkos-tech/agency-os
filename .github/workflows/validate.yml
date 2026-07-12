@@ -1,0 +1,38 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate marketplace manifest (strict)
+        run: claude plugin validate ./ --strict
+
+      - name: Validate all plugin manifests (strict)
+        run: |
+          for p in plugins/*/; do
+            echo "== $p"
+            claude plugin validate "$p" --strict
+          done
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Repo consistency checks (frontmatter, manifests, reference links)
+        run: |
+          pip install pyyaml
+          python3 scripts/validate_frontmatter.py

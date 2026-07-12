@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "The complete Claude Code toolkit for web & advertising design agencies",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "agency-core",
       "source": "./plugins/agency-core",
       "description": "Agency project workflow: BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH router, project scaffolding, handoffs and proposals.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "GEKKOS Tech"
       },

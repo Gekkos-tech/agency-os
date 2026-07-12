@@ -1,7 +1,7 @@
 {
   "name": "agency-core",
   "description": "Agency project workflow: BRIEF → CONCEPT → DESIGN → BUILD → QA → LAUNCH router, project scaffolding, handoffs and proposals.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "GEKKOS Tech",
     "url": "https://github.com/gekkos-tech"
